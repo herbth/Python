@@ -26,12 +26,12 @@ with open(file_name,'r+') as file:
     for line in file:
         values = line.split()
         if values[0].startswith('VERTICES'):
-            node_numb =  int(values[2][:])
+            node_numb =  int(values[2][:])            # We store the number of Node for the next Step
         elif values[0].startswith('VEHICULOS'):
-            veh_numb =  int(values[2][:])
+            veh_numb =  int(values[2][:])             # We store the number of Vehicle for the next Step
         elif values[0].startswith('CAPACIDAD'):
-            capacity =  int(values[2][:])
-        elif values[0] == "(" and len(values) >0:
+            capacity =  int(values[2][:])             # We store the capacity of the vehicle for the next Step
+        elif values[0] == "(" and len(values) >0:     
             if len(values) > 5:
                 values2 = [values[1][:-1], values[2][:-1], values[4], values[6]]
 
