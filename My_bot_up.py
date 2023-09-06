@@ -1,4 +1,7 @@
-
+#########################################################################################################################
+###      This is me in 2020 trying to automate my crypto market activities. This code is not optimal and need more    ###
+###      attention but is a good foundation for a strategy on fluctuating indices                                     ###
+#########################################################################################################################
 
 import time
 
